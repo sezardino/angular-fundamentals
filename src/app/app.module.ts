@@ -12,6 +12,7 @@ import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NgForComponent } from './ng-for/ng-for.component';
     NgIfComponent,
     NgSwitchComponent,
     NgForComponent,
+    PipesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
