@@ -17,6 +17,6 @@ export class BindingsComponent implements OnInit {
   }
 
   inputHandler(evt: Event) {
-    this.inputValue = (evt.target as HTMLInputElement).value;
+    this.inputValue = (<HTMLInputElement>evt.target).value;
   }
 }
