@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NgIfComponent } from './ng-if/ng-if.component';
     NgStyleComponent,
     NgClassComponent,
     NgIfComponent,
+    NgSwitchComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

@@ -1,0 +1,15 @@
+<button
+  class="px-3 py-1 border-2 border-teal-700 rounded-md transition-[text_background] hover:bg-teal-700 hover:text-white"
+  (click)="clickHandler()">Click me</button>
+
+<container-element [ngSwitch]="isActive">
+  <div *ngSwitchCase="true" class="mt-5 w-52 h-52 border rounded-xl flex justify-center items-center">
+    true
+  </div>
+  <div *ngSwitchCase="false" class="mt-5 w-52 h-52 border rounded-xl bg-teal-700 flex justify-center items-center">
+    false
+  </div>
+  <div *ngSwitchDefault class="mt-5 w-52 h-52 border rounded-xl bg-teal-700 flex justify-center items-center">
+    default
+  </div>
+</container-element>
