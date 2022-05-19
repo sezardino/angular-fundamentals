@@ -8,6 +8,7 @@ import { BindingsComponent } from './bindings/bindings.component';
 import { FormsBindingComponent } from './forms-binding/forms-binding.component';
 import { FormsModule } from '@angular/forms';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     BindingsComponent,
     FormsBindingComponent,
     NgStyleComponent,
+    NgClassComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
