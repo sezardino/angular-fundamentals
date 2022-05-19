@@ -9,6 +9,7 @@ import { FormsBindingComponent } from './forms-binding/forms-binding.component';
 import { FormsModule } from '@angular/forms';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NgClassComponent } from './ng-class/ng-class.component';
     FormsBindingComponent,
     NgStyleComponent,
     NgClassComponent,
+    NgIfComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
