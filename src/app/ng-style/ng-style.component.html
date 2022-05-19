@@ -1,0 +1,9 @@
+<div class="py-5">
+  <button
+    class="px-3 py-1 border-2 border-teal-700 rounded-md transition-[text_background] hover:bg-teal-700 hover:text-white"
+    (click)="isActive = !isActive">Click me</button>
+
+  <div
+    [ngStyle]="{ marginTop:'40px', width: '200px', height: '200px', border: '1px solid black', borderRadius: '20px', backgroundColor: isActive ? 'blue' : 'black'}">
+  </div>
+</div>

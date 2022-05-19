@@ -7,6 +7,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { BindingsComponent } from './bindings/bindings.component';
 import { FormsBindingComponent } from './forms-binding/forms-binding.component';
 import { FormsModule } from '@angular/forms';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
     InterpolationComponent,
     BindingsComponent,
     FormsBindingComponent,
+    NgStyleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
