@@ -29,4 +29,8 @@ export class AppComponent {
       id: 3,
     },
   ];
+
+  addPostHandler(post: Post) {
+    this.posts.unshift(post);
+  }
 }
