@@ -15,7 +15,12 @@
 
       <ul class="mt-4 grid gap-4">
         <li *ngFor="let item of posts">
-          <app-post [post]="item"></app-post>
+          <app-post [post]="item">
+            <small *ngIf="item.text.length > 10; else short">long text</small>
+            <ng-template #short>
+              <small>short text</small>
+            </ng-template>
+          </app-post>
         </li>
       </ul>
     </div>
