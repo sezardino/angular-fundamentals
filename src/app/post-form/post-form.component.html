@@ -1,6 +1,7 @@
 <form class="grid gap-3" (submit)="submitHandler()">
-  <input type="text" name="title" placeholder="Title..." [(ngModel)]="title" class="border px-4 py-2 rounded-lg" />
-  <textarea name="body" rows="5" placeholder="Body..." [(ngModel)]="text"
+  <input type="text" name="title" placeholder="Title..." #titleInput [(ngModel)]="title"
+    class="border px-4 py-2 rounded-lg" />
+  <textarea name="body" rows="5" placeholder="Body..." #txtInput [(ngModel)]="text"
     class="border px-4 py-2 rounded-lg resize-none"></textarea>
   <button type="submit"
     class="px-4 py-2 border rounded-xl justify-self-start transition-all duration-300 hover:text-white hover:bg-black">Submit</button>

@@ -1,4 +1,11 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { Post } from '../app.component';
 
 @Component({
@@ -8,6 +15,8 @@ import { Post } from '../app.component';
 })
 export class PostFormComponent implements OnInit {
   @Output() onAddPost: EventEmitter<Post> = new EventEmitter<Post>();
+  @ViewChild('titleInput') titleInput: ElementRef<HTMLInputElement>;
+  @ViewChild('titleInput') textInput: ElementRef<HTMLInputElement>;
 
   title = '';
   text = '';
@@ -17,7 +26,14 @@ export class PostFormComponent implements OnInit {
   ngOnInit(): void {}
 
   submitHandler() {
-    if (!this.title.trim() || !this.text.trim()) {
+    if (!this.title.trim()) {
+      this.titleInput.nativeElement.focus();
+
+      return;
+    }
+
+    if (!this.text.trim()) {
+      this.textInput.nativeElement.focus();
       return;
     }
 
