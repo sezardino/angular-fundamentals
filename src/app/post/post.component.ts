@@ -1,4 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  ContentChild,
+  ElementRef,
+  Input,
+  OnInit,
+} from '@angular/core';
 import { Post } from '../app.component';
 
 @Component({
@@ -8,8 +14,11 @@ import { Post } from '../app.component';
 })
 export class PostComponent implements OnInit {
   @Input() post: Post = {} as Post;
+  @ContentChild('slot', { static: true }) contentRef: ElementRef;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.contentRef);
+  }
 }
