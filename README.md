@@ -1,4 +1,4 @@
-#This repo created for education of fundamentals of Angular
+# This repo created for education of fundamentals of Angular
 
 If is empty is means that not started yet
 
